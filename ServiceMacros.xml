@@ -13,17 +13,21 @@
         <Macro index="3" name="Pip Cam4" description="">
             <Op id="KeyFillInput" mixEffectBlockIndex="0" keyIndex="0" input="Camera4"/>
         </Macro>
-        <Macro index="4" name="Test no ID" description="Speaker with Projector">
-            <Op id="KeyFillInput" mixEffectBlockIndex="0" keyIndex="0" input="Camera3"/>
-            <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="0.4"/>
-            <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="0.4"/>
-            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="-9.4"/>
-            <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="4.60001"/>
+
+        <Macro index="4" name="Music Zoom" description="">
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="False"/>
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background"/>
+            <Op id="PreviewInput" mixEffectBlockIndex="0" input="Camera2"/>
+            <Op id="KeyFillInput" mixEffectBlockIndex="0" keyIndex="0" input="Camera2"/>
+            <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="1.55"/>
+            <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="1.55"/>
+            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="-8.2"/>
+            <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="-0.4"/>
             <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="False"/>
             <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background"/>
             <Op id="MacroSleep" frames="1"/>
             <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="True"/>
-            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background, Key1"/>
+            <Op id="AutoTransition" mixEffectBlockIndex="0" source="Background, Key1"/>
         </Macro>
 
         <Macro index="5" name="Projector" description="">
@@ -42,12 +46,70 @@
             <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background"/>
         </Macro>
 
+        <Macro index="7" name="Music Projector" description="">
+            <Op id="ProgramInput" mixEffectBlockIndex="0" input="Camera2"/>
+            <Op id="KeyFillInput" mixEffectBlockIndex="0" keyIndex="0" input="Camera3"/>
+            <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="0.45"/>
+            <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="0.45"/>
+            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="-8.8"/>
+            <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="4.8"/>
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="False"/>
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background"/>
+            <Op id="MacroSleep" frames="1"/>
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="True"/>
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background, Key1"/>
+        </Macro>
+
+        <Macro index="8" name="Projector Music" description="">
+            <Op id="ProgramInput" mixEffectBlockIndex="0" input="Camera3"/>
+            <Op id="KeyFillInput" mixEffectBlockIndex="0" keyIndex="0" input="Camera2"/>
+            <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="0.4"/>
+            <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="0.4"/>
+            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="-9.6"/>
+            <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="-5.4"/>
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="False"/>
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background"/>
+            <Op id="MacroSleep" frames="1"/>
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="True"/>
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background, Key1"/>
+        </Macro>
+
+        <Macro index="9" name="Projector Speaker" description="">
+            <Op id="ProgramInput" mixEffectBlockIndex="0" input="Camera3"/>
+            <Op id="KeyFillInput" mixEffectBlockIndex="0" keyIndex="0" input="Camera1"/>
+            <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="0.4"/>
+            <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="0.4"/>
+            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="-9.6"/>
+            <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="-5.4"/>
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="False"/>
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background"/>
+            <Op id="MacroSleep" frames="1"/>
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="True"/>
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background, Key1"/>
+        </Macro>
+
         <Macro index="10" name="Speaker Wide" description="">
             <Op id="PreviewInput" mixEffectBlockIndex="0" input="Camera1"/>
             <Op id="PreviewFollowsProgramOnNextAutoTransition" mixEffectBlockIndex="0"/>
             <Op id="AutoTransition" mixEffectBlockIndex="0"/>
             <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="False"/>
             <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background"/>
+        </Macro>
+
+        <Macro index="11" name="Speaker" description="">
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="False"/>
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background"/>
+            <Op id="PreviewInput" mixEffectBlockIndex="0" input="Camera1"/>
+            <Op id="KeyFillInput" mixEffectBlockIndex="0" keyIndex="0" input="Camera1"/>
+            <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="1.55"/>
+            <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="1.55"/>
+            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="-8.2"/>
+            <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="-4.1"/>
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="False"/>
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background"/>
+            <Op id="MacroSleep" frames="1"/>
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="True"/>
+            <Op id="AutoTransition" mixEffectBlockIndex="0" source="Background, Key1"/>
         </Macro>
 
         <Macro index="12" name="Speaker Zoom" description="">
@@ -58,7 +120,7 @@
             <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="2.5"/>
             <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="2.5"/>
             <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="-19.7"/>
-            <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="-13.5"/>
+            <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="-12.9"/>
             <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="False"/>
             <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background"/>
             <Op id="MacroSleep" frames="1"/>
@@ -66,6 +128,28 @@
             <Op id="AutoTransition" mixEffectBlockIndex="0" source="Background, Key1"/>
         </Macro>
 
+        <Macro index="13" name="Speaker Projector" description="">
+            <Op id="ProgramInput" mixEffectBlockIndex="0" input="Camera1"/>
+            <Op id="KeyFillInput" mixEffectBlockIndex="0" keyIndex="0" input="Camera3"/>
+            <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="0.55"/>
+            <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="0.55"/>
+            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="-7.1"/>
+            <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="4.0"/>
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="False"/>
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background"/>
+            <Op id="MacroSleep" frames="1"/>
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="True"/>
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background, Key1"/>
+        </Macro>
+
+        <Macro index="14" name="PIP ON" description="">
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background, Key1"/>
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="True"/>
+        </Macro>
+        <Macro index="15" name="PIP OFF" description="">
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="False"/>
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background"/>
+        </Macro>
     </MacroPool>
     <MacroControl loop="False"/>
 </Profile>
