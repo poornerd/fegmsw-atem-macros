@@ -169,6 +169,38 @@
             <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="False"/>
             <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background"/>
         </Macro>
+
+        <Macro index="17" name="Gain -2" description="">
+            <Op id="FairlightAudioMixerInputSourceInputGain" input="ExternalMic" sourceId="18446744073709486336" gain="-2"/>
+        </Macro>
+        <Macro index="18" name="Gain -4" description="">
+            <Op id="FairlightAudioMixerInputSourceInputGain" input="ExternalMic" sourceId="18446744073709486336" gain="-4"/>
+        </Macro>
+        <Macro index="19" name="Gain -6" description="">
+            <Op id="FairlightAudioMixerInputSourceInputGain" input="ExternalMic" sourceId="18446744073709486336" gain="-6"/>
+        </Macro>
+        <Macro index="20" name="Gain -8" description="">
+            <Op id="FairlightAudioMixerInputSourceInputGain" input="ExternalMic" sourceId="18446744073709486336" gain="-8"/>
+        </Macro>
+        <Macro index="21" name="Gain -10" description="">
+            <Op id="FairlightAudioMixerInputSourceInputGain" input="ExternalMic" sourceId="18446744073709486336" gain="-10"/>
+        </Macro>   
+
+        <Macro index="22" name="Music Projector Right" description="">
+            <Op id="DVEKeyBorderInnerWidth" mixEffectBlockIndex="0" keyIndex="0" innerWidth="0"/>
+            <Op id="ProgramInput" mixEffectBlockIndex="0" input="Camera2"/>
+            <Op id="KeyFillInput" mixEffectBlockIndex="0" keyIndex="0" input="Camera3"/>
+            <Op id="DVEAndFlyKeyXSize" mixEffectBlockIndex="0" keyIndex="0" xSize="0.65"/>
+            <Op id="DVEAndFlyKeyYSize" mixEffectBlockIndex="0" keyIndex="0" ySize="0.65"/>
+            <Op id="DVEAndFlyKeyXPosition" mixEffectBlockIndex="0" keyIndex="0" xPosition="5.5"/>
+            <Op id="DVEAndFlyKeyYPosition" mixEffectBlockIndex="0" keyIndex="0" yPosition="-4.8"/>
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="False"/>
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background"/>
+            <Op id="MacroSleep" frames="1"/>
+            <Op id="KeyOnAir" mixEffectBlockIndex="0" keyIndex="0" onAir="True"/>
+            <Op id="TransitionSource" mixEffectBlockIndex="0" source="Background, Key1"/>
+        </Macro>
+
     </MacroPool>
     <MacroControl loop="False"/>
 </Profile>
